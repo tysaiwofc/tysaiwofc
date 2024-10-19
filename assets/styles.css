@@ -8,8 +8,8 @@ body, html {
 
 .parallax {
     background-image: 
-      url('./assets/wave-paint.png'), 
-      url('./assets/wave-plain.png'); 
+      url('./wave-paint.png'), 
+      url('./wave-plain.png'); 
     background-attachment: fixed, fixed; 
     background-position: center calc(-50px + top), center bottom; 
     background-repeat: no-repeat, no-repeat; 
@@ -19,9 +19,9 @@ body, html {
 
 .parallax-with-rain {
     background-image: 
-      url('./assets/wave-paint.png'), 
-      url('./assets/wave-plain.png'),
-      url('./assets/rain.webp');
+      url('./wave-paint.png'), 
+      url('./wave-plain.png'),
+      url('./rain.webp');
       
     background-attachment: fixed, fixed, fixed; 
     
