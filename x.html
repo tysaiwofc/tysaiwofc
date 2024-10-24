@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X from Tysaiw.</title>
-</head>
-<body>
+    <meta property="og:title" content="Ver Status no X (Twitter)">
+    <meta property="og:description" content="Veja o status publicado por tysaiwofc no X (antigo Twitter).">
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1846696025102471168/ZI8BOUzx_400x400.jpg">
+    <meta property="og:type" content="website">
+    
+    <title>Tweet</title>
+    
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-
         const id = urlParams.get('id');
 
         if (id) {
-            window.location.href = `https://x.com/tysaiwofc/status/${id}`;
+            setTimeout(() => {
+                window.location.href = `https://x.com/tysaiwofc/status/${id}`;
+            }, 3000);
         } else {
-            alert('Esse tweet não foi encontrado!');
+            alert('Tweet não encontrado.')
         }
     </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecionando...</h1>
+    <p>Aguarde enquanto redirecionamos você para o status...</p>
+    </div>
 </body>
 </html>
