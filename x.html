@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X from Tysaiw.</title>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const id = urlParams.get('id');
+
+        if (id) {
+            window.location.href = `https://x.com/tysaiwofc/status/${id}`;
+        } else {
+            alert('Esse tweet não foi encontrado!');
+        }
+    </script>
+</body>
+</html>
